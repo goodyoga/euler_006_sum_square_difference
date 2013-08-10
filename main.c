@@ -11,20 +11,6 @@ int check(unsigned long long int cur);
 
 #define BUFF_SIZE   128
 
-int check(unsigned long long int cur)
-{
-    char buff[BUFF_SIZE], buff2[BUFF_SIZE];
-    size_t len;
-    unsigned int i;
-
-    snprintf(buff, BUFF_SIZE, "%llu", cur);
-    len = strlen(buff);
-    for ( i = 0 ; i < len ; i++ )
-        buff2[i] = buff[len - i - 1];
-
-    return (0 == strncmp(buff, buff2, len));
-}
-
 int main(int argc, char **argv)
 {
     unsigned long long int max;
