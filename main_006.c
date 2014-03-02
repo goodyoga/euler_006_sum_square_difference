@@ -5,11 +5,27 @@
 #include <string.h>   /* strlen  */
 #include <unistd.h>   /* getopt */
 
-void usage(void);
-char *prog;
-int check(unsigned long long int cur);
+/**
+ * @file main_006.c
+ * @addtogroup  EULER_006  Euler_006_Sum_Square_Difference
+ * @{
+ */
+
 
 #define BUFF_SIZE   128
+
+
+void usage(void);
+int main(int argc, char **argv);
+
+
+/** @} */
+
+
+/***********************************
+ * Implementation
+ ***********************************/
+
 
 int main(int argc, char **argv)
 {
@@ -18,7 +34,6 @@ int main(int argc, char **argv)
     int opt, all = 0;
     char *p;
     
-    prog = argv[0];
     max = 100;
 
     while ( -1 != (opt = getopt(argc, argv, "ahn:")) )
