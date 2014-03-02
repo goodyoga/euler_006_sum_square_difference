@@ -14,10 +14,19 @@
 
 #define BUFF_SIZE   128
 
-
-void usage(void);
+/**
+ * 
+ * @param argc number of argments.
+ * @param argv options
+ * @return always 0
+ */
 int main(int argc, char **argv);
 
+
+/**
+ * @brief shows usage.
+ */
+void usage(void);
 
 /** @} */
 
